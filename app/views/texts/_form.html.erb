@@ -1,0 +1,16 @@
+<%= form_for @text, :html => {:multipart => true} do |f| %>
+<% if @text.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@text.errors.count, "error") %> prohibited this attachment from being saved:</h2>
+  <ul>
+    <% @text.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+<%= f.text_area(:email, {:class => 'span9'}) %>
+<div>
+ <%= f.submit("Submit", {:class => "btn btn-primary btn-small" }) %> <%= submit_tag("Reset", :name => 'reset', :id => 'reset_button', :type => "reset", class: "btn btn-primary btn-small") %> 
+</div>
+<% end %>

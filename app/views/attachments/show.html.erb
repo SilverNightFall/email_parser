@@ -1,0 +1,44 @@
+
+<h1>Parsed email</h1>
+
+
+<%= @attachment.read_original_header %>
+
+<h1>Parsed E-Mail</h1>
+<p><%= @attachment.parse_message_id %></p>
+<p><%= @attachment.parse_resent_message_id %></p>
+<p><%= @attachment.parse_date %></p>
+<p><%= @attachment.parse_to %></p>
+<p><%= @attachment.parse_authentication_results %></p>
+<p><%= @attachment.parse_from %></p>
+<p><%= @attachment.parse_in_reply_to %></p>
+<p><%= @attachment.parse_reply_to %></p>
+<p><%= @attachment.parse_return_path %></p>
+<p><%= @attachment.parse_content_type %></p>
+<p><%= @attachment.parse_content_transfer_encoding %></p>
+<p><%= @attachment.parse_mime_version %></p>
+<p><%= @attachment.parse_user_agent %></p>
+<p><%= @attachment.parse_organization %></p>
+<p><%= @attachment.parse_resent_from %></p>
+<p><%= @attachment.parse_x_sender %></p>
+<p><%= @attachment.parse_x_mailer %></p>
+<p><%= @attachment.parse_dkim_signature %></p>
+<p><%= @attachment.parse_domain_key_signature %></p>
+<p><%= @attachment.parse_references %></p>
+<p><%= @attachment.parse_subject %></p>
+<p><%= @attachment.parse_thread_topic %></p>
+<p><%= @attachment.parse_thread_index %></p>
+<p><%= @attachment.parse_message_state %></p>
+<p><%= @attachment.parse_received_from %></p>
+<p><%= @attachment.parse_received_by %></p>
+<p><%= @attachment.parse_received_spf %></p>
+<p><%= @attachment.parse_x_original_arrival_time %></p>
+<p><%= @attachment.parse_cc %></p>
+<p><%= @attachment.parse_bcc %></p>
+<p><%= @attachment.parse_x_apparently_to %></p>
+<p><%= @attachment.parse_x_originating_ip %></p>
+<p><%= @attachment.parse_accept_language %></p>
+<p><%= @attachment.parse_content_language %></p>
+<p><%= @attachment.parse_x_originator_org %></p>
+<p>Body: <%= @attachment.parse_body %></p>
+<% @attachment.destroy %>

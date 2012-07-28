@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>EmailParser</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav">
+          <li><%= link_to "Home", root_path  %></li>
+          <li><%= link_to "About", '/about'  %></li>
+        </ul>
+        <ul class="nav pull-right">
+          <li><a href="/sign_in">Sign In</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <%= yield %>
+</body>
+
+</html>

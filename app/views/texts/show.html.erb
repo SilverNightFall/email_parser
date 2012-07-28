@@ -1,0 +1,44 @@
+<h1>Parsed E-mail</h1>
+
+<%= @text.text_input %>
+
+
+
+<h1>Parsed E-Mail</h1>
+<p><%= @text.parse_message_id %></p>
+<p><%= @text.parse_resent_message_id %></p>
+<p><%= @text.parse_date %></p>
+<p><%= @text.parse_to %></p>
+<p><%= @text.parse_authentication_results %></p>
+<p><%= @text.parse_from %></p>
+<p><%= @text.parse_in_reply_to %></p>
+<p><%= @text.parse_reply_to %></p>
+<p><%= @text.parse_return_path %></p>
+<p><%= @text.parse_content_type %></p>
+<p><%= @text.parse_content_transfer_encoding %></p>
+<p><%= @text.parse_mime_version %></p>
+<p><%= @text.parse_user_agent %></p>
+<p><%= @text.parse_organization %></p>
+<p><%= @text.parse_resent_from %></p>
+<p><%= @text.parse_x_sender %></p>
+<p><%= @text.parse_x_mailer %></p>
+<p><%= @text.parse_dkim_signature %></p>
+<p><%= @text.parse_domain_key_signature %></p>
+<p><%= @text.parse_references %></p>
+<p><%= @text.parse_subject %></p>
+<p><%= @text.parse_thread_topic %></p>
+<p><%= @text.parse_thread_index %></p>
+<p><%= @text.parse_message_state %></p>
+<p><%= @text.parse_received_from %></p>
+<p><%= @text.parse_received_by %></p>
+<p><%= @text.parse_received_spf %></p>
+<p><%= @text.parse_x_original_arrival_time %></p>
+<p><%= @text.parse_cc %></p>
+<p><%= @text.parse_bcc %></p>
+<p><%= @text.parse_x_apparently_to %></p>
+<p><%= @text.parse_x_originating_ip %></p>
+<p><%= @text.parse_accept_language %></p>
+<p><%= @text.parse_content_language %></p>
+<p><%= @text.parse_x_originator_org %></p>
+<p><%= @text.html2text %></p>
+<% @text.destroy %>
